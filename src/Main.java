@@ -189,7 +189,6 @@ return f;
                     a = Integer.parseInt(numbers[0]);
                     b = Integer.parseInt(numbers[1]);
                 }
-                if(10>=a&10>=b&&a>=1&&b>=1) {
                     switch (g[index]) {
                         case '+':
                             sum = (a + b);
@@ -204,8 +203,6 @@ return f;
                             sum = (a / b);
                             break;
                     }
-                }
-                else throw new ErrorExpression("Некорретное выражение");
             }                            else throw new ErrorExpression("Некорретное выражение");
             if(ToRoman((numbers[0])) != -2 && ToRoman(numbers[1]) != -2){
                 if(sum>0) {
